@@ -24,6 +24,19 @@ func pong(pings <-chan string, pongs chan<- string){
 	pongs <- msg
 }
 
+//worker pools
+/**
+- <-chan是输出的channel
+- chan<-是输入的channel
+ */
+func worker2(id int, jobs <-chan int, results chan<- int){
+	for j := range jobs {
+		fmt.Println("worker", id, "started  job", j)
+		time.Sleep(time.Second)
+		fmt.Println("worker", id, "finished job", j)
+		results <- j * 2
+	}
+}
 func main(){
 
 	/**
@@ -247,12 +260,12 @@ func main(){
 
 	fmt.Println("---Timers---")
 	/**
-	- 指定时间执行
+	- 指定在未来的一个时间点执行一次
 	-
 	 */
 	timer1 := time.NewTimer(2 * time.Second)
 
-	<-timer1.C
+	<-timer1.C // timer.C 是一个channel，当这个channel有个输入就过期
 	fmt.Println("timer 1 expired")
 
 	timer2 := time.NewTimer(time.Second)
@@ -260,14 +273,55 @@ func main(){
 		<-timer2.C
 		fmt.Println("timer 2 expired")
 	}()
-	stop2 := timer2.Stop()
+	stop2 := timer2.Stop() //手动停止这个timer
 	if stop2 {
 		fmt.Println("timer 2 stopped")
 	}
 
 
+	/**
+	- 你想在一个时间间隔内重复做一件事
+	 */
 	fmt.Println("---Tickers---")
+	//创建一个500ms的ticker，
+	// - 这个ticker有个channel,ticker.C这个channel每500ms就有个值输入
+	ticker := time.NewTicker(500 * time.Millisecond)
+	go func(){
+		// 遍历这个channel的range
+		for t:= range ticker.C {
+			fmt.Println("ticker at ",t)
+		}
+	}()
+
+	//1600ms之后手动停止这个ticker
+	time.Sleep(1600 * time.Millisecond)
+	ticker.Stop()
+	fmt.Println("ticker stopped")
+
 	fmt.Println("---worker pools---")
+	/**
+	- 使用goroutine和channel实现worker pool
+	 */
+	 //jobs1的channel用来发送工作
+	 //result的channel用来收集结果
+	jobs1 := make(chan int, 100)
+	result := make(chan int, 100)
+	//启动3个worker
+	for w := 1; w <= 3; w++ {
+		go worker2(w, jobs1, result)
+	}
+
+	//发送5个工作到jobs1这个channel,发送完后关闭
+	for j := 1; j <= 5; j++ {
+		jobs1 <- j
+	}
+	close(jobs1)
+
+	//收集所有工作的结果
+	for a := 1; a<=5; a++ {
+		<-result
+	}
+
 	fmt.Println("---rate limiting---")
 
 }

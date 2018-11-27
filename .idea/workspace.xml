@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="267a1fb1-49f0-4a57-9330-82b08e720304" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/demo/demo1.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/demo/demo2.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/demo/demo2.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/demo/demo3.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/demo1/demo1.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/demo/demo1.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/web-demo/webdemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/web-demo/webdemo.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/demo/demo3.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/demo/demo3.go" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -62,13 +56,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="go" value="10882" />
+          <entry key="go" value="12023" />
           <entry key="md" value="775" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="10928" />
+          <entry key="Go" value="12069" />
           <entry key="Markdown" value="729" />
         </counts>
       </usages-collector>
@@ -84,8 +78,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/demo/demo3.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="250" column="6" lean-forward="true" selection-start-line="250" selection-start-column="6" selection-end-line="250" selection-end-column="6" />
+            <state relative-caret-position="258">
+              <caret line="318" column="4" selection-start-line="318" selection-start-column="4" selection-end-line="318" selection-end-column="4" />
               <folding>
                 <element signature="e#14#39#0" expanded="true" />
               </folding>
@@ -146,7 +140,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="617" />
+    <option name="x" value="672" />
     <option name="y" value="23" />
     <option name="width" value="844" />
     <option name="height" value="778" />
@@ -226,7 +220,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build webdemo.go">
+  <component name="RunManager" selected="Go Build.go build demo3.go">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -316,8 +310,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build webdemo.go" />
         <item itemvalue="Go Build.go build demo3.go" />
+        <item itemvalue="Go Build.go build webdemo.go" />
         <item itemvalue="Go Build.go build demo3_1.go" />
         <item itemvalue="Go Build.go build demo3_2.go" />
         <item itemvalue="Go Build.go build demo2.go" />
@@ -344,15 +338,15 @@
       <workItem from="1542704510575" duration="597000" />
       <workItem from="1542876109516" duration="1214000" />
       <workItem from="1543190850572" duration="18845000" />
-      <workItem from="1543261012397" duration="11101000" />
+      <workItem from="1543261012397" duration="13904000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52258000" />
+    <option name="totallyTimeSpent" value="55061000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="617" y="23" width="844" height="778" extended-state="0" />
+    <frame x="672" y="23" width="844" height="778" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4977778" visible="true" weight="0.24563591" />
@@ -362,7 +356,7 @@
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.28503937" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49875313" visible="true" weight="0.28503937" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -372,8 +366,8 @@
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32902297" />
       <window_info anchor="bottom" id="Problems" order="10" weight="0.32988167" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49904215" visible="true" weight="0.32913387" />
-      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50095785" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49750623" weight="0.32913387" />
+      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50124687" side_tool="true" visible="true" weight="0.28503937" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="14" />
       <window_info anchor="bottom" id="Messages" order="15" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -551,8 +545,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/demo/demo3.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="250" column="6" lean-forward="true" selection-start-line="250" selection-start-column="6" selection-end-line="250" selection-end-column="6" />
+        <state relative-caret-position="258">
+          <caret line="318" column="4" selection-start-line="318" selection-start-column="4" selection-end-line="318" selection-end-column="4" />
           <folding>
             <element signature="e#14#39#0" expanded="true" />
           </folding>
