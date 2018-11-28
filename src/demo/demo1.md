@@ -51,8 +51,7 @@ func main()  {
 	fmt.Println("1 + 2 + 3 =",res1)
 	}
 ```
-#### Multiple Return Values
- 返回多个变量
+#### Multiple Return Values 返回多个变量
 ```go
 
     func vals() (int, int){
